@@ -35,5 +35,4 @@ app.get("/email", (req, res) => {
   const url = `https://api.linkedin.com/v2/emailAddress`;
   handleRequest(req, res, url);
 });
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
+app.listen(process.env.PORT || 3000);
