@@ -8,6 +8,9 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   next();
 });
+app.get("/", function (req, res) {
+  res.send("<h1>Hello World!</h1>")
+})
 
 const handleRequest = (req, res, baseUrl) => {
   request(
